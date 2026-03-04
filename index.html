@@ -1,150 +1,69 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YTDownloaders v1.14.4 — Загрузка видео, аудио и плейлистов</title>
-    
-    <link rel="icon" type="image/x-icon" href="red-download-icon.ico">
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        body { background-color: #0f172a; color: #e2e8f0; scroll-behavior: smooth; }
-        .glass { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); }
-        .gradient-text { background: linear-gradient(90deg, #3b82f6, #8b5cf6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .feature-card:hover { border-color: #3b82f6; transform: translateY(-5px); transition: all 0.3s ease; }
-    </style>
+<meta charset="UTF-8">
+<style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 20px auto; padding: 0 15px; }
+    h2 { color: #007bff; border-bottom: 2px solid #007bff; padding-bottom: 10px; }
+    h3 { color: #2c3e50; margin-top: 25px; }
+    .update-box { background: #f8f9fa; border-left: 5px solid #007bff; padding: 15px; margin: 20px 0; border-radius: 4px; }
+    .android-box { border-left-color: #3ddc84; background: #f0fff4; }
+    .btn { display: inline-block; background: #007bff; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin: 5px 5px 5px 0; font-weight: bold; }
+    .btn-android { background: #3ddc84; color: #000; }
+    .warning { background: #fff3cd; border: 1px solid #ffeeba; padding: 10px; border-radius: 4px; font-size: 0.9em; margin-top: 15px; }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 5px; }
+    code { background: #e9ecef; padding: 2px 5px; border-radius: 3px; }
+</style>
 </head>
-<body class="font-sans">
+<body>
 
-    <nav class="sticky top-0 z-50 glass py-4 px-6">
-        <div class="max-w-6xl mx-auto flex justify-between items-center">
-            <div class="flex flex-col md:flex-row md:items-center gap-1 md:gap-3">
-                <div class="flex items-center gap-2">
-                    <img src="red-download-icon.ico" alt="Logo" class="w-8 h-8"> 
-                    <span class="text-xl font-bold">YTDownloaders</span>
-                    <span class="text-xs bg-blue-600 px-2 py-1 rounded text-white font-normal">v1.14.4</span>
-                </div>
-                <span class="text-[10px] text-blue-400 uppercase tracking-wider font-medium md:border-l md:border-slate-700 md:pl-3">
-                    Релиз: 21 февраля 2026
-                </span>
-            </div>
-            <div class="hidden lg:flex gap-6 text-sm font-medium">
-                <a href="#features" class="hover:text-blue-400 transition text-slate-300">Возможности</a>
-                <a href="#tech" class="hover:text-blue-400 transition text-slate-300">Технологии</a>
-                <a href="https://sourceforge.net/projects/ytdowloader/files/latest/download" class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition text-white">Скачать</a>
-            </div>
+    <h2>🚀 Глобальное обновление: Инструменты для YouTube (PC & Android)</h2>
+    <p>Представляем обновление экосистемы загрузки контента. Теперь поддержка Proton VPN на Windows и новое мобильное приложение для Android!</p>
+
+    <div class="update-box">
+        <h3>💻 1. YTDownloaders v1.14.4 (Windows)</h3>
+        <p>Удобный графический интерфейс со встроенным FFmpeg для быстрой работы "из коробки".</p>
+        
+        <strong>Что нового:</strong>
+        <ul>
+            <li><b>Интеграция Proton VPN:</b> Управление VPN прямо из настроек программы.</li>
+            <li><b>Выбор качества:</b> Возможность выбирать разрешение от 360p до 720p HD.</li>
+            <li><b>Гибкость:</b> Изменение названия файла перед началом загрузки.</li>
+            <li><b>Ребрендинг:</b> Переход на новую систему версий и обновленное название.</li>
+        </ul>
+
+        <a href="https://sourceforge.net/projects/ytdowloader/files/latest/download" class="btn">📥 Скачать для Windows</a>
+        <a href="https://dmitrymaxs.github.io/webytdownloaders/" style="color: #007bff; text-decoration: underline;">Официальный сайт</a>
+
+        <div class="warning">
+            ⚠️ <b>Установка:</b> Приложение не подписано. В SmartScreen выберите <i>"Подробнее" -> "Выполнить в любом случае"</i>.
         </div>
-    </nav>
+    </div>
 
-    <header class="py-16 px-6 text-center">
-        <div class="max-w-4xl mx-auto">
-            <div class="inline-block px-4 py-1 border border-blue-500/30 rounded-full text-blue-400 text-sm mb-6 bg-blue-500/10">
-                🚀 Новое: Выбор качества, Proton VPN и ядро от 04.02.2026
-            </div>
-            <h1 class="text-5xl md:text-6xl font-extrabold mb-6 leading-tight">
-                Загружайте видео и <span class="gradient-text">плейлисты</span> мгновенно
-            </h1>
-            <p class="text-xl text-slate-400 mb-10">
-                Удобный Standalone инструмент. Всё необходимое для работы включено в один файл.
-            </p>
-            <div class="flex flex-wrap justify-center gap-4">
-                <a href="https://sourceforge.net/projects/ytdowloader/files/YT_v1.14.4.exe/download" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition flex items-center gap-2 shadow-lg shadow-blue-500/20">
-                    <i class="fas fa-download"></i> Скачать v1.14.4
-                </a>
-            </div>
+    <div class="update-box android-box">
+        <h3>📱 2. YTSmart v1.0.4 (Android) — NEW!</h3>
+        <p>Легкое приложение для мобильной загрузки видео, музыки и целых плейлистов.</p>
+
+        <strong>Основные функции:</strong>
+        <ul>
+            <li><b>Режимы:</b> Загрузка видео или только аудио (MP3/подкасты).</li>
+            <li><b>Фоновая работа:</b> Не мешает использованию смартфона во время загрузки.</li>
+            <li><b>Авто-апдейт:</b> Движок <code>yt-dlp</code> обновляется автоматически при первом запуске.</li>
+            <li><b>Удобный доступ:</b> Все файлы сохраняются в папку <code>Download/YTSmart</code>.</li>
+        </ul>
+
+        <a href="https://sourceforge.net/projects/ytsmart/files/YTSmart_v.1.0.4.apk/download" class="btn btn-android">📥 Скачать APK для Android</a>
+        <a href="https://sourceforge.net/projects/ytsmart/files/" style="color: #2d5a27; text-decoration: underline; margin-left: 10px;">Страница проекта</a>
+
+        <div class="warning">
+            🤖 <b>Инструкция:</b> Разрешите установку из "Неизвестных источников" в настройках безопасности вашего Android-устройства.
         </div>
-    </header>
+    </div>
 
-    <main class="max-w-6xl mx-auto px-6 space-y-24 pb-20">
-
-        <section id="features">
-            <h2 class="text-3xl font-bold mb-12 text-center text-white font-mono uppercase tracking-tight">🚀 Возможности v1.14.4</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-center md:text-left">
-                <div class="glass p-8 rounded-2xl feature-card border border-transparent">
-                    <div class="text-blue-500 text-3xl mb-4"><i class="fas fa-tv"></i></div>
-                    <h3 class="text-xl font-bold mb-2 text-white">Выбор качества</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">Настраивайте разрешение под свои нужды: от экономичных 360p до четких 720p (HD).</p>
-                </div>
-                <div class="glass p-8 rounded-2xl feature-card border border-transparent">
-                    <div class="text-purple-500 text-3xl mb-4"><i class="fas fa-shield-alt"></i></div>
-                    <h3 class="text-xl font-bold mb-2 text-white">Proton VPN</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">Полная совместимость с Proton VPN для стабильной и безопасной работы.</p>
-                </div>
-                <div class="glass p-8 rounded-2xl feature-card border border-transparent">
-                    <div class="text-green-500 text-3xl mb-4"><i class="fas fa-file-signature"></i></div>
-                    <h3 class="text-xl font-bold mb-2 text-white">Смена имени</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">Возможность изменить имя скачиваемого файла прямо в интерфейсе программы.</p>
-                </div>
-                <div class="glass p-8 rounded-2xl feature-card border border-transparent">
-                    <div class="text-orange-500 text-3xl mb-4"><i class="fas fa-list-ul"></i></div>
-                    <h3 class="text-xl font-bold mb-2 text-white">Плейлисты</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">Просто вставьте одну ссылку, и программа автоматически скачает весь плейлист целиком.</p>
-                </div>
-                <div class="glass p-8 rounded-2xl feature-card border border-transparent">
-                    <div class="text-pink-500 text-3xl mb-4"><i class="fas fa-window-restore"></i></div>
-                    <h3 class="text-xl font-bold mb-2 text-white">Улучшенный UI</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">Оптимизированный функционал панелей управления и удобные всплывающие подсказки.</p>
-                </div>
-                <div class="glass p-8 rounded-2xl feature-card border border-transparent">
-                    <div class="text-yellow-500 text-3xl mb-4"><i class="fas fa-music"></i></div>
-                    <h3 class="text-xl font-bold mb-2 text-white">Аудио в MP3</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">Автоматическое извлечение звука и конвертация в форматы MP3, M4A и OGG.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="tech" class="py-12 bg-slate-800/30 rounded-3xl px-8 border border-white/5">
-            <h2 class="text-2xl font-bold mb-8 text-center text-white">🛠 ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ</h2>
-            <div class="grid md:grid-cols-2 gap-10">
-                <div class="space-y-4">
-                    <ul class="space-y-3 text-sm text-slate-300">
-                        <li class="flex items-center gap-3"><i class="fas fa-microchip text-blue-500"></i> Ядро <strong>yt-dlp v2026.02.04</strong></li>
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-green-500"></i> Встроенный FFmpeg 8.0</li>
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-green-500"></i> Оптимизация сетевых путей (Proxy/VPN)</li>
-                        <li class="flex items-center gap-3"><i class="fas fa-check text-green-500"></i> Новая нумерация: 1.XX.X</li>
-                    </ul>
-                </div>
-                <div class="flex items-center">
-                    <p class="text-sm text-slate-400 italic">
-                        Приложение является Standalone: все зависимости упакованы внутри EXE, запуск не требует установки Python или библиотек.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <section id="install" class="max-w-3xl mx-auto">
-            <div class="border-l-4 border-yellow-500 bg-yellow-500/10 p-8 rounded-r-2xl">
-                <h2 class="text-2xl font-bold mb-4 flex items-center gap-3 text-yellow-500">
-                    <i class="fas fa-exclamation-triangle"></i> Первый запуск
-                </h2>
-                <p class="mb-4 text-slate-300 text-sm leading-relaxed">
-                    Программа не имеет платной цифровой подписи, поэтому система SmartScreen может выдать предупреждение. Это стандартно для независимого ПО.
-                </p>
-                <div class="bg-slate-900/60 p-5 rounded-xl border border-slate-700">
-                    <ol class="list-decimal list-inside space-y-3 text-slate-200">
-                        <li>Нажмите <span class="text-blue-400 font-bold underline">"Подробнее"</span> в синем окне.</li>
-                        <li>Нажмите <span class="bg-slate-700 px-3 py-1 rounded text-sm text-white border border-white/10">"Выполнить в любом случае"</span>.</li>
-                    </ol>
-                </div>
-            </div>
-        </section>
-
-        <footer class="text-center pt-16 border-t border-white/5">
-            <div class="flex flex-wrap justify-center gap-8 mb-12">
-                <a href="https://t.me/Secret_Archives_Team" class="text-slate-400 hover:text-blue-400 transition flex items-center gap-2">
-                    <i class="fab fa-telegram-plane"></i> Поддержка
-                </a>
-                <a href="https://t.me/tayniearhiv" class="text-slate-400 hover:text-orange-400 transition flex items-center gap-2">
-                    <i class="fas fa-bullhorn"></i> Новости
-                </a>
-            </div>
-            <p class="text-[10px] text-slate-600 uppercase tracking-widest mb-2 font-bold">Secret Archives Team</p>
-            <p class="text-xs text-slate-600">© 2025–2026 YTDownloaders Project. Все права защищены.</p>
-        </footer>
-
-    </main>
+    <hr>
+    <p><i>Copyright (c) 2026 Secret Archives Team. Софт бесплатен для некоммерческого использования.</i></p>
+    <p>💬 Возникли вопросы или ошибки? Сообщите нам в комментариях!</p>
 
 </body>
 </html>
