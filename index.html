@@ -17,9 +17,10 @@
         .feature-card:hover { border-color: #3b82f6; transform: translateY(-5px); transition: all 0.3s ease; }
         .btn-donate { background: linear-gradient(90deg, #f59e0b, #d97706); transition: all 0.3s ease; }
         .btn-donate:hover { box-shadow: 0 0 20px rgba(245, 158, 11, 0.4); transform: scale(1.05); }
-        /* Стиль для кнопки переключения */
-        .lang-switch { cursor: pointer; border: 1px solid rgba(255,255,255,0.2); padding: 4px 8px; rounded: 6px; transition: 0.2s; }
+        .lang-switch { cursor: pointer; border: 1px solid rgba(255,255,255,0.2); padding: 4px 8px; border-radius: 6px; transition: 0.2s; }
         .lang-switch:hover { background: rgba(255,255,255,0.1); }
+        .platform-btn { transition: all 0.2s ease; }
+        .platform-btn:hover { transform: translateY(-2px); }
     </style>
 </head>
 <body class="font-sans">
@@ -32,7 +33,7 @@
                     <span class="text-xl font-bold">YTDownloaders <span class="text-slate-500 text-sm">&</span> YTSmart</span>
                 </div>
                 <span data-key="release" class="text-[10px] text-blue-400 uppercase tracking-wider font-medium md:border-l md:border-slate-700 md:pl-3">
-                    Релизы: Март 2026
+                    Релизы: Май 2026
                 </span>
             </div>
             <div class="flex flex-wrap justify-center gap-3 text-sm font-medium items-center">
@@ -43,7 +44,7 @@
                 <a href="https://donatepay.eu/don/46859" class="btn-donate px-4 py-2 rounded-lg text-white font-bold flex items-center gap-2">
                     <i class="fas fa-heart"></i> <span data-key="donate">Donate</span>
                 </a>
-                <a href="https://sourceforge.net/projects/ytsmart/files/YTSmart_v.1.0.4.apk/download" class="bg-green-600 hover:bg-green-700 px-4 py-2 rounded-lg transition text-white flex items-center gap-2">
+                <a href="https://sourceforge.net/projects/ytsmart/files/YTSmart_1.0.5.apk/download" class="bg-green-600 hover:bg-green-700 px-4 py-2 rounded-lg transition text-white flex items-center gap-2">
                     <i class="fab fa-android"></i> Android
                 </a>
                 <a href="https://sourceforge.net/projects/ytdowloader/" class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition text-white flex items-center gap-2">
@@ -65,13 +66,13 @@
                 Мощные инструменты с открытой лицензией для Windows и мобильных устройств.
             </p>
             <div class="flex flex-wrap justify-center gap-4">
-                <a href="https://sourceforge.net/projects/ytdowloader/" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg flex items-center gap-2 shadow-lg shadow-blue-500/20">
+                <a href="https://sourceforge.net/projects/ytdowloader/files/YTDownloaders%201.15.0.exe/download" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg flex items-center gap-2 shadow-lg shadow-blue-500/20 platform-btn">
                     <i class="fas fa-desktop"></i> <span data-key="btn_win">Скачать для Windows</span>
                 </a>
-                <a href="https://sourceforge.net/projects/ytsmart/files/YTSmart_v.1.0.4.apk/download" class="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-xl font-bold text-lg flex items-center gap-2 shadow-lg shadow-green-500/20">
+                <a href="https://sourceforge.net/projects/ytsmart/files/YTSmart_1.0.5.apk/download" class="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-xl font-bold text-lg flex items-center gap-2 shadow-lg shadow-green-500/20 platform-btn">
                     <i class="fab fa-android"></i> <span data-key="btn_android">Скачать для Android</span>
                 </a>
-                <a href="https://t.me/send?start=IVzogdHqQUQr" class="btn-donate text-white px-8 py-4 rounded-xl font-bold text-lg flex items-center gap-2 shadow-lg">
+                <a href="https://t.me/send?start=IVzogdHqQUQr" class="btn-donate text-white px-8 py-4 rounded-xl font-bold text-lg flex items-center gap-2 shadow-lg platform-btn">
                     <i class="fas fa-coffee"></i> <span data-key="btn_support">Поддержать</span>
                 </a>
             </div>
@@ -82,32 +83,83 @@
 
         <section id="windows">
             <div class="flex items-center gap-4 mb-12">
-                <h2 class="text-3xl font-bold text-white font-mono uppercase tracking-tight">💻 YTDownloaders v1.14.4</h2>
+                <h2 class="text-3xl font-bold text-white font-mono uppercase tracking-tight">💻 YTDownloaders v1.15.0</h2>
                 <span class="h-px flex-1 bg-slate-800"></span>
             </div>
+
+            <!-- Описание + скачать -->
+            <div class="glass p-8 rounded-2xl mb-8 border border-blue-500/20">
+                <p data-key="win_desc" class="text-slate-300 text-sm leading-relaxed mb-6">
+                    YTDownloaders — удобная программа с графическим интерфейсом для загрузки видео и аудио. Версия 1.15.0 полностью переписана с нуля: новый интерфейс, поддержка YouTube, Instagram, Vimeo, RuTube и TikTok, предпросмотр превью видео, встроенный английский язык.
+                </p>
+
+                <!-- Два варианта скачивания -->
+                <div class="grid md:grid-cols-2 gap-4 mb-6">
+                    <a href="https://sourceforge.net/projects/ytdowloader/files/YTDownloaders%201.15.0.exe/download"
+                       class="flex items-center gap-4 bg-blue-600/20 hover:bg-blue-600/30 border border-blue-500/30 rounded-xl p-4 transition platform-btn">
+                        <div class="text-blue-400 text-2xl flex-shrink-0"><i class="fas fa-box-open"></i></div>
+                        <div>
+                            <div class="font-bold text-white text-sm">Portable <span class="text-blue-400 text-xs ml-1">.exe</span></div>
+                            <div data-key="portable_desc" class="text-slate-400 text-xs mt-0.5">Запуск без установки</div>
+                        </div>
+                        <i class="fas fa-download ml-auto text-blue-400"></i>
+                    </a>
+                    <a href="https://sourceforge.net/projects/ytdowloader/files/YTDownloaders%20Setup%201.15.0.exe/download"
+                       class="flex items-center gap-4 bg-purple-600/20 hover:bg-purple-600/30 border border-purple-500/30 rounded-xl p-4 transition platform-btn">
+                        <div class="text-purple-400 text-2xl flex-shrink-0"><i class="fas fa-compact-disc"></i></div>
+                        <div>
+                            <div class="font-bold text-white text-sm">Installer <span class="text-purple-400 text-xs ml-1">.exe</span></div>
+                            <div data-key="installer_desc" class="text-slate-400 text-xs mt-0.5">Установщик с интеграцией</div>
+                        </div>
+                        <i class="fas fa-download ml-auto text-purple-400"></i>
+                    </a>
+                </div>
+
+                <!-- Системные требования -->
+                <div class="border-t border-white/5 pt-5">
+                    <h4 data-key="sysreq_h" class="text-xs uppercase tracking-widest text-slate-500 font-bold mb-3">Системные требования</h4>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 text-xs text-slate-400">
+                        <div class="flex items-center gap-2"><i class="fab fa-windows text-blue-400"></i> <span data-key="req_os">Windows 10/11 (64-bit)</span></div>
+                        <div class="flex items-center gap-2"><i class="fas fa-memory text-purple-400"></i> <span data-key="req_ram">RAM: 4 GB+</span></div>
+                        <div class="flex items-center gap-2"><i class="fas fa-hdd text-green-400"></i> <span data-key="req_ssd">SSD рекомендуется</span></div>
+                        <div class="flex items-center gap-2"><i class="fas fa-microchip text-yellow-400"></i> <span data-key="req_cpu">Dual-core 2.0 GHz+</span></div>
+                    </div>
+                </div>
+            </div>
             
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-center md:text-left">
-                <div class="glass p-8 rounded-2xl feature-card border border-transparent">
-                    <div class="text-blue-500 text-3xl mb-4"><i class="fas fa-shield-alt"></i></div>
-                    <h3 class="text-xl font-bold mb-2 text-white">Proton VPN</h3>
-                    <p data-key="feat_vpn" class="text-slate-400 text-sm leading-relaxed">Встроенная поддержка Proton VPN для обхода ограничений YouTube.</p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 text-center md:text-left">
+                <div class="glass p-6 rounded-2xl feature-card border border-transparent">
+                    <div class="text-blue-500 text-3xl mb-4"><i class="fas fa-code"></i></div>
+                    <h3 data-key="feat_rewrite_h" class="text-lg font-bold mb-2 text-white">Новая кодовая база</h3>
+                    <p data-key="feat_rewrite_p" class="text-slate-400 text-xs leading-relaxed">Полностью переписанный код, новый интерфейс и улучшенная стабильность.</p>
                 </div>
-                <div class="glass p-8 rounded-2xl feature-card border border-transparent">
-                    <div class="text-purple-500 text-3xl mb-4"><i class="fas fa-sliders-h"></i></div>
-                    <h3 data-key="feat_quality_h" class="text-xl font-bold mb-2 text-white">Выбор качества</h3>
-                    <p data-key="feat_quality_p" class="text-slate-400 text-sm leading-relaxed">Скачивайте в 360p, 480p или 720p HD. Быстро и удобно.</p>
+                <div class="glass p-6 rounded-2xl feature-card border border-transparent">
+                    <div class="text-pink-500 text-3xl mb-4"><i class="fas fa-globe"></i></div>
+                    <h3 data-key="feat_sites_h" class="text-lg font-bold mb-2 text-white">Больше платформ</h3>
+                    <p data-key="feat_sites_p" class="text-slate-400 text-xs leading-relaxed">YouTube, Instagram, Vimeo, RuTube, TikTok — всё в одном приложении.</p>
                 </div>
-                <div class="glass p-8 rounded-2xl feature-card border border-transparent">
+                <div class="glass p-6 rounded-2xl feature-card border border-transparent">
+                    <div class="text-yellow-500 text-3xl mb-4"><i class="fas fa-image"></i></div>
+                    <h3 data-key="feat_preview_h" class="text-lg font-bold mb-2 text-white">Превью видео</h3>
+                    <p data-key="feat_preview_p" class="text-slate-400 text-xs leading-relaxed">Загрузка превью видео в нижней части программы для YouTube.</p>
+                </div>
+                <div class="glass p-6 rounded-2xl feature-card border border-transparent">
                     <div class="text-green-500 text-3xl mb-4"><i class="fas fa-box"></i></div>
-                    <h3 class="text-xl font-bold mb-2 text-white">Standalone</h3>
-                    <p data-key="feat_standalone" class="text-slate-400 text-sm leading-relaxed">Программа не требует установки дополнительных библиотек или Python.</p>
+                    <h3 class="text-lg font-bold mb-2 text-white">Standalone</h3>
+                    <p data-key="feat_standalone" class="text-slate-400 text-xs leading-relaxed">Все зависимости включены. Работает сразу после установки, без Python.</p>
                 </div>
+            </div>
+
+            <!-- AV1 заметка -->
+            <div class="mt-6 flex items-start gap-3 bg-slate-800/50 border border-slate-700 rounded-xl p-4 text-xs text-slate-400">
+                <i class="fas fa-bolt text-yellow-400 mt-0.5 flex-shrink-0"></i>
+                <span data-key="av1_note">Если в загруженном видео отсутствует звук — установите <a href="https://av1-video-extension.ru.uptodown.com/windows/download" class="text-blue-400 hover:underline">AV1 Video Extension</a>.</span>
             </div>
         </section>
 
         <section id="android">
             <div class="flex items-center gap-4 mb-12">
-                <h2 class="text-3xl font-bold text-white font-mono uppercase tracking-tight">📱 YTSmart v1.0.4</h2>
+                <h2 class="text-3xl font-bold text-white font-mono uppercase tracking-tight">📱 YTSmart v1.0.5</h2>
                 <span class="h-px flex-1 bg-slate-800"></span>
             </div>
 
@@ -122,7 +174,7 @@
                     </div>
 
                     <div class="pt-4">
-                        <a href="https://sourceforge.net/projects/ytsmart/files/YTSmart_v.1.0.4.apk/download" class="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition inline-flex items-center gap-2">
+                        <a href="https://sourceforge.net/projects/ytsmart/files/YTSmart_1.0.5.apk/download" class="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition inline-flex items-center gap-2 platform-btn">
                             <i class="fab fa-android"></i> <span data-key="btn_and_apk">Скачать YTSmart APK</span>
                         </a>
                     </div>
@@ -147,7 +199,7 @@
                         <i class="fas fa-exclamation-triangle"></i> Windows SmartScreen
                     </h2>
                     <p data-key="warn_win" class="text-xs text-slate-300 leading-relaxed">
-                        Приложение не подписано. Нажмите <b>"Подробнее"</b> -> <b>"Выполнить в любом случае"</b> при первом запуске EXE.
+                        Приложение не подписано. Нажмите <b>"Подробнее"</b> → <b>"Выполнить в любом случае"</b> при первом запуске EXE.
                     </p>
                 </div>
                 <div class="border-l-4 border-green-500 bg-green-500/10 p-6 rounded-r-2xl">
@@ -184,7 +236,7 @@
     <script>
         const translations = {
             ru: {
-                release: "Релизы: Март 2026",
+                release: "Релизы: Май 2026",
                 donate: "Donate",
                 dl_pc: "Скачать PC",
                 badge: "🚀 Всё необходимое для загрузки в одном месте",
@@ -194,10 +246,22 @@
                 btn_win: "Скачать для Windows",
                 btn_android: "Скачать для Android",
                 btn_support: "Поддержать",
-                feat_vpn: "Встроенная поддержка Proton VPN для обхода ограничений YouTube.",
-                feat_quality_h: "Выбор качества",
-                feat_quality_p: "Скачивайте в 360p, 480p или 720p HD. Быстро и удобно.",
-                feat_standalone: "Программа не требует установки дополнительных библиотек или Python.",
+                win_desc: "YTDownloaders — удобная программа с графическим интерфейсом для загрузки видео и аудио. Версия 1.15.0 полностью переписана с нуля: новый интерфейс, поддержка YouTube, Instagram, Vimeo, RuTube и TikTok, предпросмотр превью видео, встроенный английский язык.",
+                portable_desc: "Запуск без установки",
+                installer_desc: "Установщик с интеграцией",
+                sysreq_h: "Системные требования",
+                req_os: "Windows 10/11 (64-bit)",
+                req_ram: "RAM: 4 GB+",
+                req_ssd: "SSD рекомендуется",
+                req_cpu: "Dual-core 2.0 GHz+",
+                feat_rewrite_h: "Новая кодовая база",
+                feat_rewrite_p: "Полностью переписанный код, новый интерфейс и улучшенная стабильность.",
+                feat_sites_h: "Больше платформ",
+                feat_sites_p: "YouTube, Instagram, Vimeo, RuTube, TikTok — всё в одном приложении.",
+                feat_preview_h: "Превью видео",
+                feat_preview_p: "Загрузка превью видео в нижней части программы для YouTube.",
+                feat_standalone: "Все зависимости включены. Работает сразу после установки, без Python.",
+                av1_note: "Если в загруженном видео отсутствует звук — установите AV1 Video Extension.",
                 and_title: "Мобильная свобода",
                 and_sub: "Полноценная загрузка видео и плейлистов на ваш телефон. Сохраняйте музыку в фоновом режиме.",
                 no_ads: "Без рекламы",
@@ -207,15 +271,15 @@
                 f2: "Конвертация видео в аудио (Music/Podcasts)",
                 f3: "Прямой доступ к папке загрузок из приложения",
                 f4: "Автоматическое обновление ядра yt-dlp",
-                warn_win: "Приложение не подписано. Нажмите 'Подробнее' -> 'Выполнить в любом случае' при первом запуске EXE.",
+                warn_win: "Приложение не подписано. Нажмите «Подробнее» → «Выполнить в любом случае» при первом запуске EXE.",
                 warn_and_h: "Установка APK",
-                warn_and_p: "Разрешите 'Установку из неизвестных источников' в настройках безопасности вашего браузера.",
+                warn_and_p: "Разрешите «Установку из неизвестных источников» в настройках безопасности вашего браузера.",
                 support: "Поддержка",
                 news: "Новости",
-                footer_legal: "ПО предоставляется 'как есть' под лицензией BSL 1.1. Некоммерческое использование бесплатно."
+                footer_legal: "ПО предоставляется «как есть» под лицензией BSL 1.1. Некоммерческое использование бесплатно."
             },
             en: {
-                release: "Releases: March 2026",
+                release: "Releases: May 2026",
                 donate: "Donate",
                 dl_pc: "Download PC",
                 badge: "🚀 Everything you need to download in one place",
@@ -225,10 +289,22 @@
                 btn_win: "Download for Windows",
                 btn_android: "Download for Android",
                 btn_support: "Support Project",
-                feat_vpn: "Built-in Proton VPN support to bypass YouTube restrictions.",
-                feat_quality_h: "Quality Selection",
-                feat_quality_p: "Download in 360p, 480p or 720p HD. Fast and easy.",
-                feat_standalone: "No additional libraries or Python installation required.",
+                win_desc: "YTDownloaders is a user-friendly GUI app for downloading video and audio. Version 1.15.0 is fully rewritten from scratch: new interface, support for YouTube, Instagram, Vimeo, RuTube and TikTok, thumbnail preview, and built-in English language.",
+                portable_desc: "Run without installation",
+                installer_desc: "Installer with system integration",
+                sysreq_h: "System Requirements",
+                req_os: "Windows 10/11 (64-bit)",
+                req_ram: "RAM: 4 GB+",
+                req_ssd: "SSD recommended",
+                req_cpu: "Dual-core 2.0 GHz+",
+                feat_rewrite_h: "New Codebase",
+                feat_rewrite_p: "Fully rewritten code, new interface and improved stability.",
+                feat_sites_h: "More Platforms",
+                feat_sites_p: "YouTube, Instagram, Vimeo, RuTube, TikTok — all in one app.",
+                feat_preview_h: "Video Preview",
+                feat_preview_p: "Thumbnail preview displayed at the bottom of the app for YouTube links.",
+                feat_standalone: "All dependencies included. Works right after install, no Python needed.",
+                av1_note: "If downloaded video has no audio — install AV1 Video Extension.",
                 and_title: "Mobile Freedom",
                 and_sub: "Full video and playlist downloads on your phone. Save music in the background.",
                 no_ads: "No Ads",
@@ -238,7 +314,7 @@
                 f2: "Convert video to audio (Music/Podcasts)",
                 f3: "Direct access to downloads folder from the app",
                 f4: "Automatic yt-dlp core updates",
-                warn_win: "Application is not signed. Click 'More info' -> 'Run anyway' on first launch.",
+                warn_win: "Application is not signed. Click 'More info' → 'Run anyway' on first launch.",
                 warn_and_h: "APK Installation",
                 warn_and_p: "Enable 'Install from unknown sources' in your browser or file manager settings.",
                 support: "Support",
@@ -247,119 +323,44 @@
             }
         };
 
-        let currentLang = 'ru';
+        let currentLang = localStorage.getItem('preferredLang') || 'ru';
 
         function toggleLanguage() {
             currentLang = currentLang === 'ru' ? 'en' : 'ru';
+            localStorage.setItem('preferredLang', currentLang);
             updateText();
         }
 
         function updateText() {
-            // Обновляем все элементы с атрибутом data-key
             document.querySelectorAll('[data-key]').forEach(elem => {
                 const key = elem.getAttribute('data-key');
                 if (translations[currentLang][key]) {
+                    // Сохраняем ссылки внутри av1_note
+                    if (key === 'av1_note') {
+                        const link = elem.querySelector('a');
+                        elem.innerText = translations[currentLang][key];
+                        if (link) {
+                            const newLink = document.createElement('a');
+                            newLink.href = 'https://av1-video-extension.ru.uptodown.com/windows/download';
+                            newLink.className = 'text-blue-400 hover:underline';
+                            newLink.textContent = 'AV1 Video Extension';
+                            const text = translations[currentLang][key];
+                            const parts = text.split('AV1 Video Extension');
+                            elem.innerHTML = '';
+                            elem.appendChild(document.createTextNode(parts[0]));
+                            elem.appendChild(newLink);
+                            if (parts[1]) elem.appendChild(document.createTextNode(parts[1]));
+                        }
+                        return;
+                    }
                     elem.innerText = translations[currentLang][key];
                 }
             });
-
-            // Обновляем текст кнопки переключения
             document.getElementById('lang-label').innerText = currentLang === 'ru' ? 'EN' : 'RU';
-            
-            // Обновляем атрибут lang у html для SEO
             document.documentElement.lang = currentLang;
         }
+
+        document.addEventListener('DOMContentLoaded', updateText);
     </script>
-    <script>
-    const translations = {
-        ru: {
-            release: "Релизы: Март 2026",
-            donate: "Donate",
-            dl_pc: "Скачать PC",
-            badge: "🚀 Всё необходимое для загрузки в одном месте",
-            hero_title: "Загружайте видео на",
-            and: "и",
-            hero_sub: "Мощные инструменты с открытой лицензией для Windows и мобильных устройств.",
-            btn_win: "Скачать для Windows",
-            btn_android: "Скачать для Android",
-            btn_support: "Поддержать",
-            feat_vpn: "Встроенная поддержка Proton VPN для обхода ограничений YouTube.",
-            feat_quality_h: "Выбор качества",
-            feat_quality_p: "Скачивайте в 360p, 480p или 720p HD. Быстро и удобно.",
-            feat_standalone: "Программа не требует установки дополнительных библиотек или Python.",
-            and_title: "Мобильная свобода",
-            and_sub: "Полноценная загрузка видео и плейлистов на ваш телефон. Сохраняйте музыку в фоновом режиме.",
-            no_ads: "Без рекламы",
-            btn_and_apk: "Скачать YTSmart APK",
-            and_feats_h: "Особенности YTSmart:",
-            f1: "Загрузка целых плейлистов одной ссылкой",
-            f2: "Конвертация видео в аудио (Music/Podcasts)",
-            f3: "Прямой доступ к папке загрузок из приложения",
-            f4: "Автоматическое обновление ядра yt-dlp",
-            warn_win: "Приложение не подписано. Нажмите 'Подробнее' -> 'Выполнить в любом случае' при первом запуске EXE.",
-            warn_and_h: "Установка APK",
-            warn_and_p: "Разрешите 'Установку из неизвестных источников' в настройках безопасности вашего браузера.",
-            support: "Поддержка",
-            news: "Новости",
-            footer_legal: "ПО предоставляется 'как есть' под лицензией BSL 1.1. Некоммерческое использование бесплатно."
-        },
-        en: {
-            release: "Releases: March 2026",
-            donate: "Donate",
-            dl_pc: "Download PC",
-            badge: "🚀 Everything you need to download in one place",
-            hero_title: "Download videos to",
-            and: "and",
-            hero_sub: "Powerful open-license tools for Windows and mobile devices.",
-            btn_win: "Download for Windows",
-            btn_android: "Download for Android",
-            btn_support: "Support Project",
-            feat_vpn: "Built-in Proton VPN support to bypass YouTube restrictions.",
-            feat_quality_h: "Quality Selection",
-            feat_quality_p: "Download in 360p, 480p or 720p HD. Fast and easy.",
-            feat_standalone: "No additional libraries or Python installation required.",
-            and_title: "Mobile Freedom",
-            and_sub: "Full video and playlist downloads on your phone. Save music in the background.",
-            no_ads: "No Ads",
-            btn_and_apk: "Download YTSmart APK",
-            and_feats_h: "YTSmart Features:",
-            f1: "Download entire playlists with one link",
-            f2: "Convert video to audio (Music/Podcasts)",
-            f3: "Direct access to downloads folder from the app",
-            f4: "Automatic yt-dlp core updates",
-            warn_win: "Application is not signed. Click 'More info' -> 'Run anyway' on first launch.",
-            warn_and_h: "APK Installation",
-            warn_and_p: "Enable 'Install from unknown sources' in your browser or file manager settings.",
-            support: "Support",
-            news: "News",
-            footer_legal: "Software is provided 'as is' under BSL 1.1 license. Non-commercial use is free."
-        }
-    };
-
-    // Читаем сохраненный язык или используем русский по умолчанию
-    let currentLang = localStorage.getItem('preferredLang') || 'ru';
-
-    function toggleLanguage() {
-        currentLang = currentLang === 'ru' ? 'en' : 'ru';
-        localStorage.setItem('preferredLang', currentLang); // Сохраняем выбор
-        updateText();
-    }
-
-    function updateText() {
-        document.querySelectorAll('[data-key]').forEach(elem => {
-            const key = elem.getAttribute('data-key');
-            if (translations[currentLang][key]) {
-                elem.innerText = translations[currentLang][key];
-            }
-        });
-
-        // Меняем метку на кнопке (показываем, на какой язык переключим)
-        document.getElementById('lang-label').innerText = currentLang === 'ru' ? 'EN' : 'RU';
-        document.documentElement.lang = currentLang;
-    }
-
-    // Инициализация при загрузке страницы
-    document.addEventListener('DOMContentLoaded', updateText);
-</script>
 </body>
 </html>
