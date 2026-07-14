@@ -64,7 +64,7 @@
     </nav>
 
     <!-- PROJECT 1: YTDownloaders & YTSmart -->
-    <div id="yt-hub" class="tab-content active animate-fadeIn">
+    <div id="yt-hub" class="tab-content active">
         <header class="py-16 px-6 text-center relative overflow-hidden">
             <div class="max-w-4xl mx-auto relative z-10">
                 <div data-key="badge" class="inline-block px-4 py-1 border border-blue-500/30 rounded-full text-blue-400 text-sm mb-6 bg-blue-500/10">
@@ -221,21 +221,21 @@
     </div>
 
     <!-- PROJECT 2: LLM Server Controller -->
-    <div id="llm-controller" class="tab-content animate-fadeIn">
+    <div id="llm-controller" class="tab-content">
         <header class="relative overflow-hidden py-16 text-center">
             <div class="max-w-4xl mx-auto px-4 relative z-10">
-                <span class="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-medium bg-indigo-500/10 text-indigo-400 rounded-full border border-indigo-500/20 mb-4">
+                <span data-key="llm_version_badge" class="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-medium bg-indigo-500/10 text-indigo-400 rounded-full border border-indigo-500/20 mb-4">
                     Версия 0.1.0 · MIT Лицензия
                 </span>
                 <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white via-slate-200 to-indigo-400 mb-6">
                     LLM Server Controller
                 </h1>
-                <p class="text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed mb-8">
+                <p data-key="llm_hero_sub" class="text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed mb-8">
                     Кроссплатформенное настольное приложение для удобного управления локальным сервером <code class="text-indigo-400 bg-slate-950 px-1.5 py-0.5 rounded border border-slate-800 text-sm">llama-server.exe</code>. Запускайте и настраивайте GGUF модели без терминала.
                 </p>
                 <div class="flex flex-wrap justify-center gap-4">
                     <a href="https://sourceforge.net/projects/llm-server-controller/files/LLMServerController_v0.1.0.exe/download" class="px-6 py-3.5 bg-indigo-600 hover:bg-indigo-500 font-semibold rounded-xl shadow-lg shadow-indigo-600/20 transition duration-200 text-white flex items-center gap-2 text-base">
-                        <i class="fas fa-download"></i> Скачать для Windows (.exe)
+                        <i class="fas fa-download"></i> <span data-key="llm_btn_download">Скачать для Windows (.exe)</span>
                     </a>
                 </div>
             </div>
@@ -245,55 +245,55 @@
         <main class="max-w-5xl mx-auto px-6 space-y-16 pb-16">
             <!-- Features Grid -->
             <section>
-                <h2 class="text-2xl font-bold text-center mb-8">Основные возможности</h2>
+                <h2 data-key="llm_features_h" class="text-2xl font-bold text-center mb-8">Основные возможности</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <div class="bg-slate-900/60 p-6 rounded-xl border border-slate-800">
-                        <div class="text-indigo-400 font-bold text-base mb-2">🕹 Управление бэкендом</div>
-                        <p class="text-slate-400 text-xs leading-relaxed">Запуск, остановка и перезапуск сервера с визуальным контролем статуса, анимацией загрузки и звуковыми оповещениями.</p>
+                        <div data-key="llm_f1_h" class="text-indigo-400 font-bold text-base mb-2">🕹 Управление бэкендом</div>
+                        <p data-key="llm_f1_p" class="text-slate-400 text-xs leading-relaxed">Запуск, остановка и перезапуск сервера с визуальным контролем статуса, анимацией загрузки и звуковыми оповещениями.</p>
                     </div>
                     <div class="bg-slate-900/60 p-6 rounded-xl border border-slate-800">
-                        <div class="text-indigo-400 font-bold text-base mb-2">📦 Авто-установка</div>
-                        <p class="text-slate-400 text-xs leading-relaxed">Прямое скачивание 9 различных сборок llama.cpp (Vulkan, CUDA, CPU и др.) прямо из меню. Автоматическая загрузка необходимых DLL.</p>
+                        <div data-key="llm_f2_h" class="text-indigo-400 font-bold text-base mb-2">📦 Авто-установка</div>
+                        <p data-key="llm_f2_p" class="text-slate-400 text-xs leading-relaxed">Прямое скачивание 9 различных сборок llama.cpp (Vulkan, CUDA, CPU и др.) прямо из меню. Автоматическая загрузка необходимых DLL.</p>
                     </div>
                     <div class="bg-slate-900/60 p-6 rounded-xl border border-slate-800">
-                        <div class="text-indigo-400 font-bold text-base mb-2">⚙️ 12 категорий настроек</div>
-                        <p class="text-slate-400 text-xs leading-relaxed">Тонкая конфигурация: контекст, GPU-слои, Flash Attention, размеры batch, параметры генерации, настройки MoE и эмбеддингов.</p>
+                        <div data-key="llm_f3_h" class="text-indigo-400 font-bold text-base mb-2">⚙️ 12 категорий настроек</div>
+                        <p data-key="llm_f3_p" class="text-slate-400 text-xs leading-relaxed">Тонкая конфигурация: контекст, GPU-слои, Flash Attention, размеры batch, параметры генерации, настройки MoE и эмбеддингов.</p>
                     </div>
                 </div>
             </section>
 
             <!-- UI & Architecture -->
             <section class="bg-slate-900/40 border border-slate-800 rounded-2xl p-6 md:p-8">
-                <h2 class="text-xl font-bold mb-4 flex items-center gap-2"><i class="fas fa-th-large text-indigo-400"></i> Продуманный интерфейс</h2>
+                <h2 data-key="llm_ui_h" class="text-xl font-bold mb-4 flex items-center gap-2"><i class="fas fa-th-large text-indigo-400"></i> Продуманный интерфейс</h2>
                 <div class="space-y-3 text-slate-300 text-sm">
-                    <p>Главное окно разделено на три функциональные зоны для максимальной продуктивности:</p>
+                    <p data-key="llm_ui_sub">Главное окно разделено на три функциональные зоны для максимальной продуктивности:</p>
                     <ul class="list-disc pl-5 space-y-2 text-slate-400 text-xs">
-                        <li><strong class="text-slate-200">Панель путей:</strong> Быстрый выбор исполняемого файла, GGUF-модели и кнопка мгновенной загрузки бэкенда.</li>
-                        <li><strong class="text-slate-200">Двухпанельный менеджер параметров:</strong> Слева удобный список категорий, справа — аккуратная сетка из 4 колонок со всеми полями ввода.</li>
-                        <li><strong class="text-slate-200">Окно логов:</strong> Интерактивный вывод потоков сервера с возможностью очистки, сохранения в файл или копирования в буфер.</li>
+                        <li id="llm_ui_l1"><strong class="text-slate-200">Панель путей:</strong> Быстрый выбор исполняемого файла, GGUF-модели и кнопка мгновенной загрузки бэкенда.</li>
+                        <li id="llm_ui_l2"><strong class="text-slate-200">Двухпанельный менеджер параметров:</strong> Слева удобный список категорий, справа — аккуратная сетка из 4 колонок со всеми полями ввода.</li>
+                        <li id="llm_ui_l3"><strong class="text-slate-200">Окно логов:</strong> Интерактивный вывод потоков сервера с возможностью очистки, сохранения в файл или копирования в буфер.</li>
                     </ul>
                 </div>
             </section>
 
             <!-- Workflow -->
             <section>
-                <h2 class="text-2xl font-bold text-center mb-8">Как это работает?</h2>
+                <h2 data-key="llm_work_h" class="text-2xl font-bold text-center mb-8">Как это работает?</h2>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                     <div class="bg-slate-900/30 p-5 rounded-xl border border-slate-800">
-                        <div class="text-xs font-bold text-indigo-400 mb-1 uppercase tracking-wider">Шаг 1</div>
-                        <p class="text-xs text-slate-400 leading-relaxed">Скачайте бэкенд через <span class="text-white font-medium">Файл → Установить llama.cpp</span> или укажите путь к файлу.</p>
+                        <div data-key="llm_step1" class="text-xs font-bold text-indigo-400 mb-1 uppercase tracking-wider">Шаг 1</div>
+                        <p data-key="llm_step1_p" class="text-xs text-slate-400 leading-relaxed">Скачайте бэкенд через <span class="text-white font-medium">Файл → Установить llama.cpp</span> или укажите путь к файлу.</p>
                     </div>
                     <div class="bg-slate-900/30 p-5 rounded-xl border border-slate-800">
-                        <div class="text-xs font-bold text-indigo-400 mb-1 uppercase tracking-wider">Шаг 2</div>
-                        <p class="text-xs text-slate-400 leading-relaxed">Выберите вашу любимую ИИ-модель в формате <span class="text-white font-medium">.gguf</span> через файловый диалог.</p>
+                        <div data-key="llm_step2" class="text-xs font-bold text-indigo-400 mb-1 uppercase tracking-wider">Шаг 2</div>
+                        <p data-key="llm_step2_p" class="text-xs text-slate-400 leading-relaxed">Выберите вашу любимую ИИ-модель в формате <span class="text-white font-medium">.gguf</span> через файловый диалог.</p>
                     </div>
                     <div class="bg-slate-900/30 p-5 rounded-xl border border-slate-800">
-                        <div class="text-xs font-bold text-indigo-400 mb-1 uppercase tracking-wider">Шаг 3</div>
-                        <p class="text-xs text-slate-400 leading-relaxed">Отрегулируйте параметры (например, количество GPU-слоёв для ускорения) под железо.</p>
+                        <div data-key="llm_step3" class="text-xs font-bold text-indigo-400 mb-1 uppercase tracking-wider">Шаг 3</div>
+                        <p data-key="llm_step3_p" class="text-xs text-slate-400 leading-relaxed">Отрегулируйте параметры (например, количество GPU-слоёв для ускорения) под железо.</p>
                     </div>
                     <div class="bg-slate-900/30 p-5 rounded-xl border border-slate-800">
-                        <div class="text-xs font-bold text-indigo-400 mb-1 uppercase tracking-wider">Шаг 4</div>
-                        <p class="text-xs text-slate-400 leading-relaxed">Нажмите <span class="text-white font-medium">Запустить</span>. Веб-интерфейс откроется на порту 18080!</p>
+                        <div data-key="llm_step4" class="text-xs font-bold text-indigo-400 mb-1 uppercase tracking-wider">Шаг 4</div>
+                        <p data-key="llm_step4_p" class="text-xs text-slate-400 leading-relaxed">Нажмите <span class="text-white font-medium">Запустить</span>. Веб-интерфейс откроется на порту 18080!</p>
                     </div>
                 </div>
             </section>
@@ -301,24 +301,24 @@
             <!-- Specs & Hardware -->
             <section class="grid grid-cols-1 md:grid-cols-2 gap-8 border-t border-slate-800 pt-8">
                 <div>
-                    <h3 class="text-lg font-bold mb-3">Системные требования</h3>
+                    <h3 data-key="llm_req_h" class="text-lg font-bold mb-3">Системные требования</h3>
                     <ul class="space-y-2 text-xs text-slate-400">
                         <li class="flex items-start gap-2">
                             <span class="text-emerald-500">✔</span>
-                            <span><strong>Windows:</strong> Полная поддержка (включая встроенный установщик бэкендов).</span>
+                            <span id="llm_req_win"><strong>Windows:</strong> Полная поддержка (включая встроенный установщик бэкендов).</span>
                         </li>
                         <li class="flex items-start gap-2">
-                            <span class="text-indigo-400 font-bold">i</span>
-                            <span><strong>Linux / macOS:</strong> Ограниченная поддержка (установка бэкенда силами пользователя).</span>
+                            <span class="text-indigo-400 font-bold">ℹ</span>
+                            <span id="llm_req_linux"><strong>Linux / macOS:</strong> Ограниченная поддержка (установка бэкенда силами пользователя).</span>
                         </li>
                         <li class="flex items-start gap-2">
                             <span class="text-emerald-500">✔</span>
-                            <span><strong>Python:</strong> Версии 3.x для сборки из исходного кода.</span>
+                            <span id="llm_req_py"><strong>Python:</strong> Версии 3.x для сборки из исходного кода.</span>
                         </li>
                     </ul>
                 </div>
                 <div>
-                    <h3 class="text-lg font-bold mb-3">Поддерживаемое железо</h3>
+                    <h3 data-key="llm_hw_h" class="text-lg font-bold mb-3">Поддерживаемое железо</h3>
                     <div class="flex flex-wrap gap-2">
                         <span class="px-2 py-1 bg-slate-800 rounded text-xs font-medium text-slate-300 border border-slate-700">Vulkan (Универсальный)</span>
                         <span class="px-2 py-1 bg-slate-800 rounded text-xs font-medium text-slate-300 border border-slate-700">NVIDIA CUDA</span>
@@ -332,24 +332,24 @@
     </div>
 
     <!-- PROJECT 3: Transcrib -->
-    <div id="transcrib-app" class="tab-content animate-fadeIn">
+    <div id="transcrib-app" class="tab-content">
         <header class="py-16 text-center relative overflow-hidden">
             <div class="max-w-4xl mx-auto px-4 relative z-10">
-                <span class="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-medium bg-emerald-500/10 text-emerald-400 rounded-full border border-emerald-500/20 mb-4">
+                <span data-key="trans_badge" class="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-medium bg-emerald-500/10 text-emerald-400 rounded-full border border-emerald-500/20 mb-4">
                     v0.0.1 beta · BSL 1.1 Лицензия
                 </span>
                 <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight mb-4 text-white">
                     Transcrib
                 </h1>
-                <p class="text-xl text-slate-400 max-w-xl mx-auto mb-8">
+                <p data-key="trans_sub" class="text-xl text-slate-400 max-w-xl mx-auto mb-8">
                     Преобразуйте аудио и видео в текст локально с помощью Whisper
                 </p>
                 <div class="flex flex-wrap justify-center gap-4">
                     <a href="https://sourceforge.net/projects/transcrib/files/Transcrib%20Setup%200.0.1-beta.exe/download" class="px-6 py-3.5 bg-emerald-600 hover:bg-emerald-500 font-bold rounded-xl transition shadow-lg shadow-emerald-600/20 flex items-center gap-2">
-                        <i class="fas fa-download"></i> Скачать Transcrib Setup
+                        <i class="fas fa-download"></i> <span data-key="trans_btn_dl">Скачать Transcrib Setup</span>
                     </a>
                     <a href="https://github.com/dmitrymaxs/transcrib" target="_blank" rel="noopener noreferrer" class="px-6 py-3.5 bg-slate-800 hover:bg-slate-700 border border-slate-700 font-medium rounded-xl transition flex items-center gap-2">
-                        <i class="fab fa-github"></i> Исходный код
+                        <i class="fab fa-github"></i> <span data-key="trans_btn_git">Исходный код</span>
                     </a>
                 </div>
             </div>
@@ -359,58 +359,57 @@
         <main class="max-w-5xl mx-auto px-6 space-y-16 pb-16">
             <!-- About Section -->
             <section class="glass p-6 md:p-8 rounded-2xl border-slate-800">
-                <h2 class="text-xl font-bold mb-3 text-white">О программе</h2>
-                <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                <h2 data-key="trans_about_h" class="text-xl font-bold mb-3 text-white">О программе</h2>
+                <p data-key="trans_about_p" class="text-slate-300 text-sm leading-relaxed mb-6">
                     <strong class="text-emerald-400">Transcrib</strong> — Electron-приложение для транскрибации аудио и видео в текст на основе <strong>Whisper</strong> (OpenAI) и <strong>whisper.cpp</strong>. Выберите файл, укажите язык, нажмите «Транскрибировать» — и получите текст с тайм-кодами. Готовый результат можно сохранить в TXT, JSON, SRT или VTT.
                 </p>
                 
-                <!-- Workflow Tracker fully adapted to Tailwind -->
                 <div class="flex flex-wrap items-center justify-center gap-3 bg-slate-950/60 p-4 rounded-xl border border-slate-800 text-xs font-medium text-slate-300">
-                    <div class="flex items-center gap-1.5"><span class="text-base">📂</span> Выбрать файл</div>
+                    <div class="flex items-center gap-1.5"><span class="text-base">📂</span> <span data-key="t_step1">Выбрать файл</span></div>
                     <div class="text-slate-600">→</div>
-                    <div class="flex items-center gap-1.5"><span class="text-base">🌍</span> Выбрать язык</div>
+                    <div class="flex items-center gap-1.5"><span class="text-base">🌍</span> <span data-key="t_step2">Выбрать язык</span></div>
                     <div class="text-slate-600">→</div>
-                    <div class="flex items-center gap-1.5"><span class="text-base">🤖</span> Выбрать модель</div>
+                    <div class="flex items-center gap-1.5"><span class="text-base">🤖</span> <span data-key="t_step3">Выбрать модель</span></div>
                     <div class="text-slate-600">→</div>
-                    <div class="flex items-center gap-1.5"><span class="text-emerald-400">⚡</span> Транскрибировать</div>
+                    <div class="flex items-center gap-1.5"><span class="text-emerald-400">⚡</span> <span data-key="t_step4">Транскрибировать</span></div>
                     <div class="text-slate-600">→</div>
-                    <div class="flex items-center gap-1.5"><span class="text-base">💾</span> Сохранить</div>
+                    <div class="flex items-center gap-1.5"><span class="text-base">💾</span> <span data-key="t_step5">Сохранить</span></div>
                 </div>
             </section>
 
             <!-- Features Grid -->
             <section>
-                <h2 class="text-2xl font-bold text-center mb-8">Возможности Transcrib</h2>
+                <h2 data-key="trans_features_h" class="text-2xl font-bold text-center mb-8">Возможности Transcrib</h2>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                     <div class="bg-slate-900/50 p-5 rounded-xl border border-slate-800/80">
                         <div class="text-lg mb-2 text-emerald-400">✅</div>
-                        <h3 class="font-bold text-white text-sm mb-1">Встроенные модели</h3>
-                        <p class="text-slate-400 text-xs leading-relaxed">Модели <strong>tiny</strong> и <strong>base</strong> уже включены в дистрибутив — работают быстро и без интернета.</p>
+                        <h3 data-key="trans_f1_h" class="font-bold text-white text-sm mb-1">Встроенные модели</h3>
+                        <p data-key="trans_f1_p" class="text-slate-400 text-xs leading-relaxed">Модели <strong>tiny</strong> и <strong>base</strong> уже включены в дистрибутив — работают быстро и без интернета.</p>
                     </div>
                     <div class="bg-slate-900/50 p-5 rounded-xl border border-slate-800/80">
                         <div class="text-lg mb-2 text-emerald-400">📥</div>
-                        <h3 class="font-bold text-white text-sm mb-1">Дополнительные модели</h3>
-                        <p class="text-slate-400 text-xs leading-relaxed">Модели <strong>small</strong>, <strong>medium</strong> и <strong>large</strong> скачиваются по запросу для более качественного распознавания.</p>
+                        <h3 data-key="trans_f2_h" class="font-bold text-white text-sm mb-1">Дополнительные модели</h3>
+                        <p data-key="trans_f2_p" class="text-slate-400 text-xs leading-relaxed">Модели <strong>small</strong>, <strong>medium</strong> и <strong>large</strong> скачиваются по запросу для более качественного распознавания.</p>
                     </div>
                     <div class="bg-slate-900/50 p-5 rounded-xl border border-slate-800/80">
                         <div class="text-lg mb-2 text-emerald-400">🌍</div>
-                        <h3 class="font-bold text-white text-sm mb-1">99+ языков</h3>
-                        <p class="text-slate-400 text-xs leading-relaxed">Поддержка множества языков, включая русский и английский.</p>
+                        <h3 data-key="trans_f3_h" class="font-bold text-white text-sm mb-1">99+ языков</h3>
+                        <p data-key="trans_f3_p" class="text-slate-400 text-xs leading-relaxed">Поддержка множества языков, включая русский и английский.</p>
                     </div>
                     <div class="bg-slate-900/50 p-5 rounded-xl border border-slate-800/80">
                         <div class="text-lg mb-2 text-emerald-400">💾</div>
-                        <h3 class="font-bold text-white text-sm mb-1">4 формата экспорта</h3>
-                        <p class="text-slate-400 text-xs leading-relaxed">Сохраняйте результат в <strong>TXT</strong>, <strong>JSON</strong>, <strong>SRT</strong> и <strong>VTT</strong> (субтитры).</p>
+                        <h3 data-key="trans_f4_h" class="font-bold text-white text-sm mb-1">4 формата экспорта</h3>
+                        <p data-key="trans_f4_p" class="text-slate-400 text-xs leading-relaxed">Сохраняйте результат в <strong>TXT</strong>, <strong>JSON</strong>, <strong>SRT</strong> и <strong>VTT</strong> (субтитры).</p>
                     </div>
                     <div class="bg-slate-900/50 p-5 rounded-xl border border-slate-800/80">
                         <div class="text-lg mb-2 text-emerald-400">🔒</div>
-                        <h3 class="font-bold text-white text-sm mb-1">Лицензионный контроль</h3>
-                        <p class="text-slate-400 text-xs leading-relaxed">Управление лицензией с активацией по коду. Пробный период — 24 дня без ограничений.</p>
+                        <h3 data-key="trans_f5_h" class="font-bold text-white text-sm mb-1">Лицензионный контроль</h3>
+                        <p data-key="trans_f5_p" class="text-slate-400 text-xs leading-relaxed">Управление лицензией с активацией по коду. Пробный период — 24 дня без ограничений.</p>
                     </div>
                     <div class="bg-slate-900/50 p-5 rounded-xl border border-slate-800/80">
                         <div class="text-lg mb-2 text-emerald-400">⏱️</div>
-                        <h3 class="font-bold text-white text-sm mb-1">Тайм-коды</h3>
-                        <p class="text-slate-400 text-xs leading-relaxed">Каждый фрагмент текста привязан к временной метке в исходной записи.</p>
+                        <h3 data-key="trans_f6_h" class="font-bold text-white text-sm mb-1">Тайм-коды</h3>
+                        <p data-key="trans_f6_p" class="text-slate-400 text-xs leading-relaxed">Каждый фрагмент текста привязан к временной метке в исходной записи.</p>
                     </div>
                 </div>
             </section>
@@ -418,24 +417,24 @@
             <!-- Specs & Trial rules -->
             <section class="grid grid-cols-1 md:grid-cols-2 gap-8 border-t border-slate-800 pt-8">
                 <div>
-                    <h3 class="text-lg font-bold mb-3 text-white">Системные требования</h3>
+                    <h3 data-key="trans_req_h" class="text-lg font-bold mb-3 text-white">Системные требования</h3>
                     <ul class="space-y-2 text-xs text-slate-400">
-                        <li>📌 <strong>OS:</strong> Windows 10 / 11 (x64)</li>
-                        <li>📌 <strong>RAM:</strong> от 4 ГБ (рекомендуется 8 ГБ)</li>
-                        <li>📌 <strong>Диск:</strong> 2–5 ГБ пространства для моделей</li>
-                        <li>📌 <strong>Сеть:</strong> Требуется только для загрузки тяжелых моделей</li>
+                        <li id="t_req_os">📌 <strong>OS:</strong> Windows 10 / 11 (x64)</li>
+                        <li id="t_req_ram">📌 <strong>RAM:</strong> от 4 ГБ (рекомендуется 8 ГБ)</li>
+                        <li id="t_req_disk">📌 <strong>Диск:</strong> 2–5 ГБ пространства для моделей</li>
+                        <li id="t_req_net">📌 <strong>Сеть:</strong> Требуется только для загрузки тяжелых моделей</li>
                     </ul>
-                    <p class="text-[11px] text-slate-500 mt-2 italic">Размер инсталлятора: ~550 МБ. В установленном виде: ~1.3 ГБ.</p>
+                    <p data-key="trans_req_note" class="text-[11px] text-slate-500 mt-2 italic">Размер инсталлятора: ~550 МБ. В установленном виде: ~1.3 ГБ.</p>
                 </div>
                 <div>
-                    <h3 class="text-lg font-bold mb-3 text-white">Условия использования</h3>
-                    <p class="text-xs text-slate-400 leading-relaxed mb-2">
+                    <h3 data-key="trans_trial_h" class="text-lg font-bold mb-3 text-white">Условия использования</h3>
+                    <p data-key="trans_trial_sub" class="text-xs text-slate-400 leading-relaxed mb-2">
                         После завершения 24 дней пробного периода вы можете:
                     </p>
                     <ul class="list-disc pl-4 space-y-1 text-xs text-slate-400">
-                        <li>Собрать приложение бесплатно напрямую из <a href="https://github.com/dmitrymaxs/transcrib" class="text-emerald-400 hover:underline">исходного кода</a></li>
-                        <li>Продлить лицензию по подсказкам в интерфейсе</li>
-                        <li>Переустановить приложение для повторного триала</li>
+                        <li id="t_trial_l1">Собрать приложение бесплатно напрямую из исходного кода</li>
+                        <li id="t_trial_l2">Продлить лицензию по подсказкам в интерфейсе</li>
+                        <li id="t_trial_l3">Переустановить приложение для повторного триала</li>
                     </ul>
                 </div>
             </section>
@@ -480,9 +479,10 @@
             document.getElementById('btn-' + tabId).classList.add('active');
         }
 
-        // Локализация для первой вкладки (YTDownloaders)
+        // Словарь локализации для всех 3-х вкладок
         const translations = {
             ru: {
+                // Tab 1 (YT)
                 release: "Релизы: Май 2026",
                 donate: "Donate",
                 dl_pc: "Скачать PC",
@@ -521,11 +521,69 @@
                 warn_win: "Приложение не подписано. Нажмите «Подробнее» → «Выполнить в любом случае» при первом запуске EXE.",
                 warn_and_h: "Установка APK",
                 warn_and_p: "Разрешите «Установку из неизвестных источников» в настройках безопасности вашего браузера.",
+                
+                // Tab 2 (LLM Controller)
+                llm_version_badge: "Версия 0.1.0 · MIT Лицензия",
+                llm_hero_sub: "Кроссплатформенное настольное приложение для удобного управления локальным сервером llama-server.exe. Запускайте и настраивайте GGUF модели без терминала.",
+                llm_btn_download: "Скачать для Windows (.exe)",
+                llm_features_h: "Основные возможности",
+                llm_f1_h: "🕹 Управление бэкендом",
+                llm_f1_p: "Запуск, остановка и перезапуск сервера с визуальным контролем статуса, анимацией загрузки и звуковыми оповещениями.",
+                llm_f2_h: "📦 Авто-установка",
+                llm_f2_p: "Прямое скачивание 9 различных сборок llama.cpp (Vulkan, CUDA, CPU и др.) прямо из меню. Автоматическая загрузка необходимых DLL.",
+                llm_f3_h: "⚙️ 12 категорий настроек",
+                llm_f3_p: "Тонкая конфигурация: контекст, GPU-слои, Flash Attention, размеры batch, параметры генерации, настройки MoE и эмбеддингов.",
+                llm_ui_h: "Продуманный интерфейс",
+                llm_ui_sub: "Главное окно разделено на три функциональные зоны для максимальной продуктивности:",
+                llm_work_h: "Как это работает?",
+                llm_step1: "Шаг 1",
+                llm_step1_p: "Скачайте бэкенд через Файл → Установить llama.cpp или укажите путь к файлу.",
+                llm_step2: "Шаг 2",
+                llm_step2_p: "Выберите вашу любимую ИИ-модель в формате .gguf через файловый диалог.",
+                llm_step3: "Шаг 3",
+                llm_step3_p: "Отрегулируйте параметры (например, количество GPU-слоёв для ускорения) под железо.",
+                llm_step4: "Шаг 4",
+                llm_step4_p: "Нажмите Запустить. Веб-интерфейс откроется на порту 18080!",
+                llm_req_h: "Системные требования",
+                llm_hw_h: "Поддерживаемое железо",
+
+                // Tab 3 (Transcrib)
+                trans_badge: "v0.0.1 beta · BSL 1.1 Лицензия",
+                trans_sub: "Преобразуйте аудио и видео в текст локально с помощью Whisper",
+                trans_btn_dl: "Скачать Transcrib Setup",
+                trans_btn_git: "Исходный код",
+                trans_about_h: "О программе",
+                trans_about_p: "Transcrib — Electron-приложение для транскрибации аудио и видео в текст на основе Whisper (OpenAI) и whisper.cpp. Выберите файл, укажите язык, нажмите «Транскрибировать» — и получите текст с тайм-кодами. Готовый результат можно сохранить в TXT, JSON, SRT или VTT.",
+                t_step1: "Выбрать файл",
+                t_step2: "Выбрать язык",
+                t_step3: "Выбрать модель",
+                t_step4: "Транскрибировать",
+                t_step5: "Сохранить",
+                trans_features_h: "Возможности Transcrib",
+                trans_f1_h: "Встроенные модели",
+                trans_f1_p: "Модели tiny и base уже включены в дистрибутив — работают быстро и без интернета.",
+                trans_f2_h: "Дополнительные модели",
+                trans_f2_p: "Модели small, medium и large скачиваются по запросу для более качественного распознавания.",
+                trans_f3_h: "99+ языков",
+                trans_f3_p: "Поддержка множества языков, включая русский и английский.",
+                trans_f4_h: "4 формата экспорта",
+                trans_f4_p: "Сохраняйте результат в TXT, JSON, SRT и VTT (субтитры).",
+                trans_f5_h: "Лицензионный контроль",
+                trans_f5_p: "Управление лицензией с активацией по коду. Пробный период — 24 дня без ограничений.",
+                trans_f6_h: "Тайм-коды",
+                trans_f6_p: "Каждый фрагмент текста привязан к временной метке в исходной записи.",
+                trans_req_h: "Системные требования",
+                trans_req_note: "Размер инсталлятора: ~550 МБ. В установленном виде: ~1.3 ГБ.",
+                trans_trial_h: "Условия использования",
+                trans_trial_sub: "После завершения 24 дней пробного периода вы можете:",
+
+                // Footer
                 support: "Поддержка",
                 news: "Новости",
-                footer_legal: "ПО предоставляется «как есть» под лицензией BSL 1.1/MIT. Некоммерческое использование бесплатно."
+                footer_legal: "Программное обеспечение предоставляется «как есть» под лицензией BSL 1.1/MIT. Некоммерческое использование бесплатно."
             },
             en: {
+                // Tab 1 (YT)
                 release: "Releases: May 2026",
                 donate: "Donate",
                 dl_pc: "Download PC",
@@ -564,9 +622,66 @@
                 warn_win: "Application is not signed. Click 'More info' → 'Run anyway' on first launch.",
                 warn_and_h: "APK Installation",
                 warn_and_p: "Enable 'Install from unknown sources' in your browser or file manager settings.",
+                
+                // Tab 2 (LLM Controller)
+                llm_version_badge: "Version 0.1.0 · MIT License",
+                llm_hero_sub: "Cross-platform desktop application for convenient local llama-server.exe management. Launch and configure GGUF models without terminal usage.",
+                llm_btn_download: "Download for Windows (.exe)",
+                llm_features_h: "Key Features",
+                llm_f1_h: "🕹 Backend Control",
+                llm_f1_p: "Start, stop, and restart server with clear visual status tracking, loading animations, and sound notifications.",
+                llm_f2_h: "📦 Auto-Installation",
+                llm_f2_p: "Direct download of 9 different llama.cpp builds (Vulkan, CUDA, CPU, etc.) right inside the menu. Automatic required DLL setup.",
+                llm_f3_h: "⚙️ 12 Config Categories",
+                llm_f3_p: "Fine-grained customization: context size, GPU layers, Flash Attention, batch size, sampling options, MoE, and embeddings configurations.",
+                llm_ui_h: "Clean & Intuitive Interface",
+                llm_ui_sub: "The main window layout is split into three core zones built for peak developer productivity:",
+                llm_work_h: "How It Works",
+                llm_step1: "Step 1",
+                llm_step1_p: "Download the backend binary via File → Install llama.cpp or provide your custom execution path.",
+                llm_step2: "Step 2",
+                llm_step2_p: "Select your preferred AI model in .gguf format via standard file picker interface.",
+                llm_step3: "Step 3",
+                llm_step3_p: "Adjust inference configurations (like GPU layers allocation for acceleration) to match your hardware.",
+                llm_step4: "Step 4",
+                llm_step4_p: "Click Launch. The native web controller interface automatically launches on port 18080!",
+                llm_req_h: "System Requirements",
+                llm_hw_h: "Supported Hardware",
+
+                // Tab 3 (Transcrib)
+                trans_badge: "v0.0.1 beta · BSL 1.1 License",
+                trans_sub: "Convert speech from audio and video files into text locally using Whisper",
+                trans_btn_dl: "Download Transcrib Setup",
+                trans_btn_git: "Source Code",
+                trans_about_h: "About Application",
+                trans_about_p: "Transcrib is an Electron-powered application designed for offline audio and video transcription using Whisper (OpenAI) and whisper.cpp. Select your file, choose language, click 'Transcribe' — and get text combined with timestamps. Export results directly to TXT, JSON, SRT, or VTT files.",
+                t_step1: "Select file",
+                t_step2: "Select language",
+                t_step3: "Select model",
+                t_step4: "Transcribe",
+                t_step5: "Save results",
+                trans_features_h: "Transcrib Capabilities",
+                trans_f1_h: "Bundled Models",
+                trans_f1_p: "Lightweight tiny and base models are pre-packaged within the installer — works fast without internet requirements.",
+                trans_f2_h: "On-demand Models",
+                trans_f2_p: "More precise small, medium, and large architecture weights can be downloaded internally for maximum detection accuracy.",
+                trans_f3_h: "99+ Languages",
+                trans_f3_p: "Comprehensive multi-language tracking support including fluent Russian and English models.",
+                trans_f4_h: "4 Export Formats",
+                trans_f4_p: "Export structures easily into TXT, rich structural JSON, or industry standard subtitle formats like SRT and VTT.",
+                trans_f5_h: "License Governance",
+                trans_f5_p: "Integrated license enforcement interface supporting secure token activation. Unrestricted trial for 24 days.",
+                trans_f6_h: "Precise Timestamps",
+                trans_f6_p: "Every transcribed text fragment is accurately paired with its exact temporary location indicator in the recording.",
+                trans_req_h: "Hardware Requirements",
+                trans_req_note: "Installer size: ~550 MB. Installed storage requirements: ~1.3 GB footprint.",
+                trans_trial_h: "Terms of Use",
+                trans_trial_sub: "Once your 24-day trial evaluation expiration completes, you can always:",
+
+                // Footer
                 support: "Support",
                 news: "News",
-                footer_legal: "Software is provided 'as is' under BSL 1.1/MIT license. Non-commercial use is free."
+                footer_legal: "Software is provided 'as is' under BSL 1.1/MIT licenses. Non-commercial deployment options are completely free."
             }
         };
 
@@ -579,6 +694,7 @@
         }
 
         function updateText() {
+            // 1. Стандартный обход по data-key атрибутам
             document.querySelectorAll('[data-key]').forEach(elem => {
                 const key = elem.getAttribute('data-key');
                 if (translations[currentLang][key]) {
@@ -602,6 +718,50 @@
                     elem.innerText = translations[currentLang][key];
                 }
             });
+
+            // 2. Детальная локализация вложенных списков и сложных блоков
+            if (currentLang === 'en') {
+                // LLM Tab UI Lists
+                document.getElementById('llm_ui_l1').innerHTML = `<strong class="text-slate-200">Paths Panel:</strong> Quick selection of executable binary, GGUF weights configuration, and an instant backend mount trigger button.`;
+                document.getElementById('llm_ui_l2').innerHTML = `<strong class="text-slate-200">Dual-pane Params Manager:</strong> Left column offers a neat category explorer index, right area distributes a responsive 4-column parameters input grid.`;
+                document.getElementById('llm_ui_l3').innerHTML = `<strong class="text-slate-200">Interactive Logging Box:</strong> Live streaming server system outputs with clean actions to wipe buffer, save logs data file or copy info to clipboard.`;
+                
+                document.getElementById('llm_req_win').innerHTML = `<strong>Windows:</strong> Fully supported runtime stack architecture (including direct automated engine asset setup).`;
+                document.getElementById('llm_req_linux').innerHTML = `<strong>Linux / macOS:</strong> Baseline tracking compatibility (deployment actions are assigned to the user, daemon executions perform flawlessly).`;
+                document.getElementById('llm_req_py').innerHTML = `<strong>Python:</strong> Python version 3.x stack environment is only needed for manually running compiled source distributions.`;
+
+                // Transcrib Requirements
+                document.getElementById('t_req_os').innerHTML = `📌 <strong>OS:</strong> Windows 10 / 11 (x64 environments)`;
+                document.getElementById('t_req_ram').innerHTML = `📌 <strong>RAM:</strong> 4 GB minimal configuration requirements (8 GB recommended)`;
+                document.getElementById('t_req_disk').innerHTML = `📌 <strong>Disk:</strong> 2–5 GB allocation space capacity for default models storage room`;
+                document.getElementById('t_req_net').innerHTML = `📌 <strong>Network:</strong> Internet connection is only required to load massive precise neural weights assets on demand`;
+
+                // Transcrib Trial List
+                document.getElementById('t_trial_l1').innerText = `Compile the binary files completely free at any time straight from the public repository branch code`;
+                document.getElementById('t_trial_l2').innerText = `Extend active evaluation license tiers using built-in guide lines prompts instructions inside the client`;
+                document.getElementById('t_trial_l3').innerText = `Perform complete installation flush wipe to refresh initial trial period counter flags again`;
+
+            } else {
+                // Восстановление RU списков
+                document.getElementById('llm_ui_l1').innerHTML = `<strong class="text-slate-200">Панель путей:</strong> Быстрый выбор исполняемого файла, GGUF-модели и кнопка мгновенной загрузки бэкенда.`;
+                document.getElementById('llm_ui_l2').innerHTML = `<strong class="text-slate-200">Двухпанельный менеджер параметров:</strong> Слева удобный список категорий, справа — аккуратная сетка из 4 колонок со всеми полями ввода.`;
+                document.getElementById('llm_ui_l3').innerHTML = `<strong class="text-slate-200">Окно логов:</strong> Интерактивный вывод потоков сервера с возможностью очистки, сохранения в файл или копирования в буфер.`;
+                
+                document.getElementById('llm_req_win').innerHTML = `<strong>Windows:</strong> Полная поддержка (включая встроенный установщик бэкендов).`;
+                document.getElementById('llm_req_linux').innerHTML = `<strong>Linux / macOS:</strong> Ограниченная поддержка (установка бэкенда силами пользователя, запуск сервера работает отлично).`;
+                document.getElementById('llm_req_py').innerHTML = `<strong>Python:</strong> Версии 3.x для сборки из исходного кода.`;
+
+                document.getElementById('t_req_os').innerHTML = `📌 <strong>OS:</strong> Windows 10 / 11 (x64)`;
+                document.getElementById('t_req_ram').innerHTML = `📌 <strong>RAM:</strong> от 4 ГБ (рекомендуется 8 ГБ)`;
+                document.getElementById('t_req_disk').innerHTML = `📌 <strong>Диск:</strong> 2–5 ГБ для моделей + место для скачиваемых моделей`;
+                document.getElementById('t_req_net').innerHTML = `📌 <strong>Интернет:</strong> требуется для скачивания моделей при первом использовании`;
+
+                document.getElementById('t_trial_l1').innerText = `Собрать приложение из исходного кода`;
+                document.getElementById('t_trial_l2').innerText = `Продлить лицензию (следуйте подсказкам в приложении)`;
+                document.getElementById('t_trial_l3').innerText = `Удалить и установить заново для повторного пробного периода`;
+            }
+
+            // Обновление кнопок переключателя
             document.getElementById('lang-label').innerText = currentLang === 'ru' ? 'EN' : 'RU';
             document.documentElement.lang = currentLang;
         }
