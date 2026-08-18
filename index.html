@@ -14,7 +14,6 @@
         .glass { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); }
         .gradient-text { background: linear-gradient(90deg, #3b82f6, #8b5cf6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .gradient-android { background: linear-gradient(90deg, #3ddc84, #07c160); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .gradient-linux { background: linear-gradient(90deg, #f59e0b, #fbbf24); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .feature-card:hover { border-color: #3b82f6; transform: translateY(-5px); transition: all 0.3s ease; }
         .btn-buy-key { background: linear-gradient(90deg, #f59e0b, #d97706); transition: all 0.3s ease; }
         .btn-buy-key:hover { box-shadow: 0 0 20px rgba(245, 158, 11, 0.4); transform: scale(1.05); }
@@ -48,9 +47,6 @@
                 <a href="https://sourceforge.net/projects/ytsmart/files/YTSmart_1.0.5.apk/download" class="bg-green-600 hover:bg-green-700 px-4 py-2 rounded-lg transition text-white flex items-center gap-2">
                     <i class="fab fa-android"></i> Android
                 </a>
-                <a href="#linux" class="bg-orange-600 hover:bg-orange-700 px-4 py-2 rounded-lg transition text-white flex items-center gap-2">
-                    <i class="fab fa-linux"></i> Linux
-                </a>
                 <a href="https://sourceforge.net/projects/ytdowloader/" class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-lg transition text-white flex items-center gap-2">
                     <i class="fas fa-desktop"></i> <span data-key="dl_pc">Скачать PC</span>
                 </a>
@@ -64,10 +60,10 @@
                 🚀 Всё необходимое для загрузки в одном месте
             </div>
             <h1 class="text-5xl md:text-6xl font-extrabold mb-6 leading-tight">
-                <span data-key="hero_title">Загружайте видео на</span> <span class="gradient-text">PC</span><span data-key="and">,</span> <span class="gradient-android">Android</span> <span data-key="and2">и</span> <span class="gradient-linux">Linux</span>
+                <span data-key="hero_title">Загружайте видео на</span> <span class="gradient-text">PC</span> <span data-key="and">и</span> <span class="gradient-android">Android</span>
             </h1>
             <p data-key="hero_sub" class="text-xl text-slate-400 mb-10">
-                Мощные инструменты с открытой лицензией для Windows, Linux и mobile устройств.
+                Мощные инструменты с открытой лицензией для Windows и mobile устройств.
             </p>
             <div class="flex flex-wrap justify-center gap-4">
                 <a href="https://sourceforge.net/projects/ytdowloader/files/YTDownloaders%201.15.2.exe/download" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg flex items-center gap-2 shadow-lg shadow-blue-500/20 platform-btn">
@@ -75,9 +71,6 @@
                 </a>
                 <a href="https://sourceforge.net/projects/ytsmart/files/YTSmart_1.0.5.apk/download" class="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-xl font-bold text-lg flex items-center gap-2 shadow-lg shadow-green-500/20 platform-btn">
                     <i class="fab fa-android"></i> <span data-key="btn_android">Скачать для Android</span>
-                </a>
-                <a href="#linux" class="bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-xl font-bold text-lg flex items-center gap-2 shadow-lg shadow-orange-500/20 platform-btn">
-                    <i class="fab fa-linux"></i> <span data-key="btn_linux">Скачать для Linux</span>
                 </a>
                 <a href="https://archivesteamsoft.github.io/sale.html" target="_blank" rel="noopener" class="btn-buy-key text-white px-8 py-4 rounded-xl font-bold text-lg flex items-center gap-2 shadow-lg platform-btn">
                     <i class="fas fa-key"></i> <span data-key="buy_key">Купить ключ ($5)</span>
@@ -160,59 +153,6 @@
             </div>
         </section>
 
-        <section id="linux">
-            <div class="flex items-center gap-4 mb-12">
-                <h2 class="text-3xl font-bold text-white font-mono uppercase tracking-tight">🐧 YTDownloaders v1.15.2 для Linux</h2>
-                <span class="h-px flex-1 bg-slate-800"></span>
-            </div>
-
-            <div class="glass p-8 rounded-2xl mb-8 border border-orange-500/20">
-                <p data-key="linux_desc" class="text-slate-300 text-sm leading-relaxed mb-6">
-                    Тот же функционал, что и на Windows: загрузка видео и аудио с YouTube, Instagram, Vimeo, RuTube и TikTok. Выберите пакет под вашу систему.
-                </p>
-
-                <div class="grid md:grid-cols-3 gap-4 mb-6">
-                    <a href="https://sourceforge.net/projects/ytdowloader/files/YTDownloaders-1.15.2-Linux-x64.deb/download"
-                       class="flex items-center gap-4 bg-orange-600/20 hover:bg-orange-600/30 border border-orange-500/30 rounded-xl p-4 transition platform-btn">
-                        <div class="text-orange-400 text-2xl flex-shrink-0"><i class="fab fa-ubuntu"></i></div>
-                        <div>
-                            <div class="font-bold text-white text-sm">Debian / Ubuntu <span class="text-orange-400 text-xs ml-1">.deb</span></div>
-                            <div data-key="deb_desc" class="text-slate-400 text-xs mt-0.5">Для Debian, Ubuntu и производных</div>
-                        </div>
-                        <i class="fas fa-download ml-auto text-orange-400"></i>
-                    </a>
-                    <a href="https://sourceforge.net/projects/ytdowloader/files/YTDownloaders-1.15.2-Linux-x64.rpm/download"
-                       class="flex items-center gap-4 bg-red-600/20 hover:bg-red-600/30 border border-red-500/30 rounded-xl p-4 transition platform-btn">
-                        <div class="text-red-400 text-2xl flex-shrink-0"><i class="fab fa-redhat"></i></div>
-                        <div>
-                            <div class="font-bold text-white text-sm">Fedora / RHEL <span class="text-red-400 text-xs ml-1">.rpm</span></div>
-                            <div data-key="rpm_desc" class="text-slate-400 text-xs mt-0.5">Для Fedora, RHEL, openSUSE и производных</div>
-                        </div>
-                        <i class="fas fa-download ml-auto text-red-400"></i>
-                    </a>
-                    <a href="https://sourceforge.net/projects/ytdowloader/files/YTDownloaders-1.15.2-Linux-x64.AppImage/download"
-                       class="flex items-center gap-4 bg-yellow-600/20 hover:bg-yellow-600/30 border border-yellow-500/30 rounded-xl p-4 transition platform-btn">
-                        <div class="text-yellow-400 text-2xl flex-shrink-0"><i class="fas fa-cubes"></i></div>
-                        <div>
-                            <div class="font-bold text-white text-sm">AppImage <span class="text-yellow-400 text-xs ml-1">.AppImage</span></div>
-                            <div data-key="appimage_desc" class="text-slate-400 text-xs mt-0.5">Универсальный пакет для большинства дистрибутивов Linux</div>
-                        </div>
-                        <i class="fas fa-download ml-auto text-yellow-400"></i>
-                    </a>
-                </div>
-
-                <div class="border-t border-white/5 pt-5">
-                    <h4 data-key="sysreq_h_linux" class="text-xs uppercase tracking-widest text-slate-500 font-bold mb-3">Системные требования</h4>
-                    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 text-xs text-slate-400">
-                        <div class="flex items-center gap-2"><i class="fab fa-linux text-orange-400"></i> <span data-key="req_os_linux">64-bit дистрибутив Linux</span></div>
-                        <div class="flex items-center gap-2"><i class="fas fa-memory text-purple-400"></i> <span data-key="req_ram">RAM: 4 GB+</span></div>
-                        <div class="flex items-center gap-2"><i class="fas fa-hdd text-green-400"></i> <span data-key="req_ssd">SSD рекомендуется</span></div>
-                        <div class="flex items-center gap-2"><i class="fas fa-microchip text-yellow-400"></i> <span data-key="req_cpu">Dual-core 2.0 GHz+</span></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <section id="android">
             <div class="flex items-center gap-4 mb-12">
                 <h2 class="text-3xl font-bold text-white font-mono uppercase tracking-tight">📱 YTSmart v1.0.5</h2>
@@ -249,21 +189,13 @@
         </section>
 
         <section id="install" class="max-w-4xl mx-auto">
-            <div class="grid md:grid-cols-3 gap-8">
+            <div class="grid md:grid-cols-2 gap-8">
                 <div class="border-l-4 border-yellow-500 bg-yellow-500/10 p-6 rounded-r-2xl">
                     <h2 class="text-xl font-bold mb-4 flex items-center gap-3 text-yellow-500">
                         <i class="fas fa-exclamation-triangle"></i> Windows SmartScreen
                     </h2>
                     <p data-key="warn_win" class="text-xs text-slate-300 leading-relaxed">
                         Приложение не подписано. Нажмите <b>"Подробнее"</b> → <b>"Выполнить в любом случае"</b> при первом запуске EXE.
-                    </p>
-                </div>
-                <div class="border-l-4 border-orange-500 bg-orange-500/10 p-6 rounded-r-2xl">
-                    <h2 data-key="warn_linux_h" class="text-xl font-bold mb-4 flex items-center gap-3 text-orange-500">
-                        <i class="fab fa-linux"></i> Установка на Linux
-                    </h2>
-                    <p data-key="warn_linux_p" class="text-xs text-slate-300 leading-relaxed">
-                        Для .deb: <b>sudo dpkg -i</b> файл. Для .rpm: <b>sudo rpm -i</b> файл или <b>sudo dnf install</b>. Для AppImage: сделайте файл исполняемым (<b>chmod +x</b>) и запустите напрямую.
                     </p>
                 </div>
                 <div class="border-l-4 border-green-500 bg-green-500/10 p-6 rounded-r-2xl">
@@ -302,12 +234,10 @@
                 dl_pc: "Скачать PC",
                 badge: "🚀 Всё необходимое для загрузки в одном месте",
                 hero_title: "Загружайте видео на",
-                and: ",",
-                and2: "и",
-                hero_sub: "Мощные инструменты с открытой лицензией для Windows, Linux и мобильных устройств.",
+                and: "и",
+                hero_sub: "Мощные инструменты с открытой лицензией для Windows и мобильных устройств.",
                 btn_win: "Скачать для Windows",
                 btn_android: "Скачать для Android",
-                btn_linux: "Скачать для Linux",
                 win_desc: "YTDownloaders — удобная программа с графическим интерфейсом для загрузки видео и аудио. Версия 1.15.2 полностью переписана с нуля: новый интерфейс, поддержка YouTube, Instagram, Vimeo, RuTube и TikTok, предпросмотр превью видео, встроенный английский язык.",
                 portable_desc: "Запуск без установки",
                 installer_desc: "Установщик с интеграцией",
@@ -324,12 +254,6 @@
                 feat_preview_p: "Загрузка превью видео в нижней части программы для YouTube.",
                 feat_standalone: "Все зависимости включены. Работает сразу после установки, без Python.",
                 av1_note: "Если в загруженном видео отсутствует звук — установите AV1 Video Extension.",
-                linux_desc: "Тот же функционал, что и на Windows: загрузка видео и аудио с YouTube, Instagram, Vimeo, RuTube и TikTok. Выберите пакет под вашу систему.",
-                deb_desc: "Для Debian, Ubuntu и производных",
-                rpm_desc: "Для Fedora, RHEL, openSUSE и производных",
-                appimage_desc: "Универсальный пакет для большинства дистрибутивов Linux",
-                sysreq_h_linux: "Системные требования",
-                req_os_linux: "64-bit дистрибутив Linux",
                 and_title: "Мобильная свобода",
                 and_sub: "Полноценная загрузка видео и плейлистов на ваш телефон. Сохраняйте музыку в фоновом режиме.",
                 no_ads: "Без рекламы",
@@ -340,8 +264,6 @@
                 f3: "Прямой доступ к папке загрузок из приложения",
                 f4: "Автоматическое обновление ядра yt-dlp",
                 warn_win: "Приложение не подписано. Нажмите «Подробнее» → «Выполнить в любом случае» при первом запуске EXE.",
-                warn_linux_h: "Установка на Linux",
-                warn_linux_p: "Для .deb: sudo dpkg -i файл. Для .rpm: sudo rpm -i файл или sudo dnf install. Для AppImage: сделайте файл исполняемым (chmod +x) и запустите напрямую.",
                 warn_and_h: "Установка APK",
                 warn_and_p: "Разрешите «Установку из неизвестных источников» в настройках безопасности вашего браузера.",
                 support: "Поддержка",
@@ -354,12 +276,10 @@
                 dl_pc: "Download PC",
                 badge: "🚀 Everything you need to download in one place",
                 hero_title: "Download videos to",
-                and: ",",
-                and2: "and",
-                hero_sub: "Powerful open-license tools for Windows, Linux and mobile devices.",
+                and: "and",
+                hero_sub: "Powerful open-license tools for Windows and mobile devices.",
                 btn_win: "Download for Windows",
                 btn_android: "Download for Android",
-                btn_linux: "Download for Linux",
                 win_desc: "YTDownloaders is a user-friendly GUI app for downloading video and audio. Version 1.15.2 is fully rewritten from scratch: new interface, support for YouTube, Instagram, Vimeo, RuTube and TikTok, thumbnail preview, and built-in English language.",
                 portable_desc: "Run without installation",
                 installer_desc: "Installer with system integration",
@@ -376,12 +296,6 @@
                 feat_preview_p: "Thumbnail preview displayed at the bottom of the app for YouTube links.",
                 feat_standalone: "All dependencies included. Works right after install, no Python needed.",
                 av1_note: "If downloaded video has no audio — install AV1 Video Extension.",
-                linux_desc: "Same functionality as on Windows: download video and audio from YouTube, Instagram, Vimeo, RuTube and TikTok. Choose the package for your system.",
-                deb_desc: "For Debian, Ubuntu and derivatives",
-                rpm_desc: "For Fedora, RHEL, openSUSE and derivatives",
-                appimage_desc: "Universal package for most Linux distributions",
-                sysreq_h_linux: "System Requirements",
-                req_os_linux: "64-bit Linux distribution",
                 and_title: "Mobile Freedom",
                 and_sub: "Full video and playlist downloads on your phone. Save music in the background.",
                 no_ads: "No Ads",
@@ -392,8 +306,6 @@
                 f3: "Direct access to downloads folder from the app",
                 f4: "Automatic yt-dlp core updates",
                 warn_win: "Application is not signed. Click 'More info' → 'Run anyway' on first launch.",
-                warn_linux_h: "Installing on Linux",
-                warn_linux_p: "For .deb: sudo dpkg -i the file. For .rpm: sudo rpm -i the file or sudo dnf install. For AppImage: make the file executable (chmod +x) and run it directly.",
                 warn_and_h: "APK Installation",
                 warn_and_p: "Enable 'Install from unknown sources' in your browser or file manager settings.",
                 support: "Support",
